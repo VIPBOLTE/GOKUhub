@@ -3,27 +3,27 @@
 import asyncio, os, time, aiohttp
 import aiohttp
 from pyrogram import filters
-from daxxhub import daxxhub as papadaxx
-from DAXXMUSIC import app
+from GOKUhub import GOKUhub as papagoku
+from GOKUMUSIC import app
 
-@app.on_message(filters.command("daxxhub"))
-async def daxxhub(_, message):
-    text = message.text[len("/daxxhub") :]
-    papadaxx(f"{text}").save(f"daxxhub_{message.from_user.id}.png")
-    await message.reply_photo(f"daxxhub_{message.from_user.id}.png")
-    os.remove(f"daxxhub_{message.from_user.id}.png")
+@app.on_message(filters.command("GOKUhub"))
+async def GOKUhub(_, message):
+    text = message.text[len("/GOKUhub") :]
+    papagoku(f"{text}").save(f"GOKUhub_{message.from_user.id}.png")
+    await message.reply_photo(f"GOKUhub_{message.from_user.id}.png")
+    os.remove(f"GOKUhub_{message.from_user.id}.png")
 
 ```
 ``` python
- pip install daxxhub
+ pip install GOKUhub
 
 ```
 
 
 
 
-# DAXXHUB 
+# GOKUHUB 
 
 
-![Project Image](https://github.com/DAXXTEAM/daxxhub/blob/main/out.png)
+![Project Image](https://github.com/VIPBOLTE/GOKUhub/blob/main/out.png)
 
