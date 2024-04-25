@@ -1,12 +1,12 @@
 '''
-Author    : daxxteam 
-Github    : https://github.com/daxxteam
-Repository: https://github.com/daxxteam/daxxhub
+Author    : VIPBOLTE 
+Github    : https://github.com/VIPBOLTE
+Repository: https://github.com/VIPBOLTE/GOKUhub
 '''
 from PIL import Image, ImageFont, ImageDraw
 import os
-font=ImageFont.truetype(os.path.dirname(__file__)+"/daxxhub.otf", 230)
-def daxxhub(teks):
+font=ImageFont.truetype(os.path.dirname(__file__)+"/GOKUhub.otf", 230)
+def GOKUhub(teks):
     (draw:=ImageDraw.Draw((img:=Image.new("RGB", ((length:=font.getsize(teks))[0]+100, length[1]), color=(0, 0, 0))))).text((int((img.width/2)-(draw.textsize(teks, font)[0]/2)), int(-25)), teks, fill=(255, 148, 224), font=font)
     (img2:=Image.new("RGB", ((hasil:=Paste(img)).width+400, hasil.height+400), color=(0, 0, 0))).paste(hasil, (int((img2.width/2)-(hasil.width/2)), int((img2.height/2)-(hasil.height/2))))
     return img2
