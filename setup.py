@@ -3,17 +3,17 @@ from setuptools import setup, find_packages
 from os import path
 base_dir = path.abspath(path.dirname(__file__))
 setup(
-  name = 'daxxhub',        
-  packages = ['daxxhub'],
+  name = 'GOKUhub',        
+  packages = ['GOKUhub'],
   include_package_data=True,
   version = '1.2',    
   license='MIT',     
-  description = 'daxxhub Logo Generator', 
-  author = 'Mr Daxx',                  
-  author_email = 'mrdaxxteam@gmail.com',     
-  url = 'https://github.com/daxxteam/daxxhub',   
-  download_url = 'https://github.com/daxxteam/daxxhub/archive/1.2.tar.gz',    
-  keywords = ['daxxhub', 'logo', 'generator'], 
+  description = 'GOKUhub Logo Generator', 
+  author = 'Mr GOKU',                  
+  author_email = 'kdivesh657@gmail.com',     
+  url = 'https://github.com/VIPBOLTE/GOKUhub',   
+  download_url = 'https://github.com/VIPBOLTE/GOKUhub/archive/1.2.tar.gz',    
+  keywords = ['GOKUhub', 'logo', 'generator'], 
   install_requires=[           
           'pillow',
       ],
